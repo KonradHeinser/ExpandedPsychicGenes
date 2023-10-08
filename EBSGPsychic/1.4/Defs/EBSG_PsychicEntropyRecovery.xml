@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+        <defName>EBSG_TerribleEntropyRecovery</defName>
+        <label>terrible heat recovery</label>
+        <iconPath>EBSG/Gene_TerribleEntropyRecovery</iconPath>
+        <description>Carriers of this gene have extreme difficulties recovering from entropy accrual, recovering entropy at one-third the normal rate.</description>
+        <displayOrderInCategory>313.0</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>0.33</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+        <defName>EBSG_BadEntropyRecovery</defName>
+        <label>bad heat recovery</label>
+        <iconPath>EBSG/Gene_BadEntropyRecovery</iconPath>
+        <description>Carriers of this gene have difficulties recovering from entropy accrual, recovering entropy at two-thirds the normal rate.</description>
+        <displayOrderInCategory>313.1</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>0.67</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+        <defName>EBSG_MinorEntropyRecovery</defName>
+        <label>minor heat recovery</label>
+        <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
+        <description>Carriers of this gene lose neural heat a bit faster than normal.</description>
+        <displayOrderInCategory>313.2</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>1.25</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+        <defName>EBSG_EntropyRecovery</defName>
+        <label>heat recovery</label>
+        <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
+        <description>Carriers of this gene lose neural heat faster than normal.</description>
+        <displayOrderInCategory>313.4</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>1.50</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+        <defName>EBSG_MajorEntropyRecovery</defName>
+        <label>major heat recovery</label>
+        <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
+        <description>Carriers of this gene lose neural heat a lot faster than normal.</description>
+        <displayOrderInCategory>313.5</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>1.75</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+        <defName>EBSG_ExtremeEntropyRecovery</defName>
+        <label>extreme heat recovery</label>
+        <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
+        <description>Carriers of this gene lose neural heat extremely fast compared to normal.</description>
+        <displayOrderInCategory>313.6</displayOrderInCategory>
+        <biostatMet>-4</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>2.00</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+        <defName>EBSG_SuperEntropyRecovery</defName>
+        <label>super heat recovery</label>
+        <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
+        <description>Carriers of this gene lose neural heat super fast compared to normal.</description>
+        <displayOrderInCategory>313.7</displayOrderInCategory>
+        <biostatMet>-5</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>2.25</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+        <defName>EBSG_HyperEntropyRecovery</defName>
+        <label>hyper heat recovery</label>
+        <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
+        <description>Carriers of this gene lose neural heat unbelievably fast compared to normal.</description>
+        <displayOrderInCategory>313.8</displayOrderInCategory>
+        <biostatMet>-6</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>2.50</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+</Defs>

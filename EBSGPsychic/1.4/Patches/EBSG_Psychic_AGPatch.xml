@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional"><!--Checks for any Alpha Genes gene-->
+        <xpath>Defs/GeneDef[defName="AG_ChemfuelBlood"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName="AG_InnatePsylink"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+	                <value><hideGene>true</hideGene></value>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/XenotypeDef/genes/li[text()="AG_InnatePsylink"]</xpath>
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/XenotypeDef/genes/li[text()="AG_InnatePsylink"]</xpath>
+                        <value>
+                            <li>EBSG_InnatePsychicAmplifier</li>
+                        </value>
+                    </match>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/AlphaGenes.WretchBlacklistDef/blackListedGenes</xpath>
+                    <value><li>EBSG_InnatePsychicAmplifier</li></value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

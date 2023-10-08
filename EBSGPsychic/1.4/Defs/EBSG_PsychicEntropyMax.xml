@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="EBSG_EntropyMaxBase">
+        <defName>EBSG_TerribleEntropyMax</defName>
+        <label>very low heat limit</label>
+        <iconPath>EBSG/Gene_TerribleEntropyMax</iconPath>
+        <description>Carriers of this gene are extremely sensitive to entropy, reducing the maximum amount they can safely store.</description>
+        <displayOrderInCategory>312.0</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <PsychicEntropyMax>0.33</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase">
+        <defName>EBSG_BadEntropyMax</defName>
+        <label>low heat limit</label>
+        <iconPath>EBSG/Gene_BadEntropyMax</iconPath>
+        <description>Carriers of this gene are sensitive to entropy, reducing the maximum amount they can safely store.</description>
+        <displayOrderInCategory>312.1</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <PsychicEntropyMax>0.67</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase">
+        <defName>EBSG_MinorEntropyMax</defName>
+        <label>somewhat high heat limit</label>
+        <iconPath>EBSG/Gene_EntropyMax</iconPath>
+        <description>Carriers of this gene have slightly lower sensitivity to entropy, increasing the maximum amount they can safely store.</description>
+        <displayOrderInCategory>312.2</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <PsychicEntropyMax>1.25</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase">
+        <defName>EBSG_EntropyMax</defName>
+        <label>high heat limit</label>
+        <iconPath>EBSG/Gene_EntropyMax</iconPath>
+        <description>Carriers of this gene have lower sensitivity to entropy, increasing the maximum amount they can safely store.</description>
+        <displayOrderInCategory>312.4</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <PsychicEntropyMax>1.50</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase">
+        <defName>EBSG_MajorEntropyMax</defName>
+        <label>very high heat limit</label>
+        <iconPath>EBSG/Gene_EntropyMax</iconPath>
+        <description>Carriers of this gene have much lower sensitivity to entropy, increasing the maximum amount they can safely store.</description>
+        <displayOrderInCategory>312.5</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+        <statFactors>
+            <PsychicEntropyMax>1.75</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase">
+        <defName>EBSG_ExtremeEntropyMax</defName>
+        <label>extremely high heat limit</label>
+        <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
+        <description>Carriers of this gene have extremely low sensitivity to entropy, increasing the maximum amount they can safely store.</description>
+        <displayOrderInCategory>312.6</displayOrderInCategory>
+        <biostatMet>-4</biostatMet>
+        <statFactors>
+            <PsychicEntropyMax>2.00</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase">
+        <defName>EBSG_SuperEntropyMax</defName>
+        <label>super high heat limit</label>
+        <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
+        <description>Carriers of this gene have super low sensitivity to entropy, increasing the maximum amount they can safely store.</description>
+        <displayOrderInCategory>312.7</displayOrderInCategory>
+        <biostatMet>-5</biostatMet>
+        <statFactors>
+            <PsychicEntropyMax>2.25</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EntropyMaxBase">
+        <defName>EBSG_HyperEntropyMax</defName>
+        <label>hyper high heat limit</label>
+        <iconPath>EBSG/Gene_ExtremeEntropyMax</iconPath>
+        <description>Carriers of this gene have unbelievably low sensitivity to entropy, increasing the maximum amount they can safely store.</description>
+        <displayOrderInCategory>312.8</displayOrderInCategory>
+        <biostatMet>-6</biostatMet>
+        <statFactors>
+            <PsychicEntropyMax>2.50</PsychicEntropyMax>
+        </statFactors>
+    </GeneDef>
+</Defs>

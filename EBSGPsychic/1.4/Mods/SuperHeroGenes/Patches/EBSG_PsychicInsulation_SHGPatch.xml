@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Solace"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Solace"]/nullifyingGenes</xpath>
+            <value><li>EBSG_InnatePsychicInsulation</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Solace"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_InnatePsychicInsulation</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Encourage"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Encourage"]/nullifyingGenes</xpath>
+            <value><li>EBSG_InnatePsychicInsulation</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Encourage"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_InnatePsychicInsulation</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Inspire"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Inspire"]/nullifyingGenes</xpath>
+            <value><li>EBSG_InnatePsychicInsulation</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Inspire"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_InnatePsychicInsulation</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Rally"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Rally"]/nullifyingGenes</xpath>
+            <value><li>EBSG_InnatePsychicInsulation</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_Rally"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_InnatePsychicInsulation</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SHG_Psionist_YouWillSubmit"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_YouWillSubmit"]/nullifyingGenes</xpath>
+            <value><li>EBSG_InnatePsychicInsulation</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SHG_Psionist_YouWillSubmit"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_InnatePsychicInsulation</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+</Patches>

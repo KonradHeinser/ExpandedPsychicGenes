@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Abstract="true" Name="EBSG_MeditationFocusBase">
+        <displayCategory>Psychic</displayCategory>
+        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
+        <exclusionTags>
+            <li>EBSG_MeditationFocus</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef Abstract="true" Name="EBSG_EntropyMaxBase">
+        <displayCategory>Psychic</displayCategory>
+        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
+        <exclusionTags>
+            <li>EBSG_EntropyMax</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef Abstract="true" Name="EBSG_EntropyRecoveryBase">
+        <displayCategory>Psychic</displayCategory>
+        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
+        <exclusionTags>
+            <li>EBSG_EntropyRecovery</li>
+        </exclusionTags>
+    </GeneDef>
+
+        <!--Genes start at 310 to make it extremely unlikely that any genes will intersect them-->
+    <GeneDef>
+        <defName>EBSG_InnatePsychicAmplifier</defName>
+        <label>innate psylink</label>
+        <iconPath>Things/Item/Special/PsylinkNeuroformer</iconPath>
+        <description>Carriers of this gene have psylinks in their head from birth.\n\nRemoving this gene will remove the psylink.\n\nThis gene only provides the standard innate things granted by a level 1 psylink, meaning you will still need to go through the normal process to gain abilities for these genes to be of use.</description>
+        <displayOrderInCategory>310</displayOrderInCategory>
+        <displayCategory>Psychic</displayCategory>
+        <biostatMet>-1</biostatMet>
+        <customEffectDescriptions>
+			<li>Gives a level 1 psylink.</li>
+		</customEffectDescriptions>
+        <modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>PsychicAmplifier</hediff>
+						<bodyparts>
+							<li>Brain</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+<!--Now, seeing InnatePsychicInsulation may make you think, why am I even in this code? It may also make you think, is he going to make a Psychic Insulator implant? 
+The answers are 1) for something I'm sure, and 2) see Superhero Genes - Deus Ex Machina. If you see this before it comes out, welcome to spoiler island!
+At the time of typing (October 8, 2023), it's been a background work-in-progress for two months. A "do it while the boss isn't watching and you have no work" thing-->
+    <GeneDef> 
+        <defName>EBSG_InnatePsychicInsulation</defName>
+        <label>psychic insulation</label>
+        <iconPath>EBSG/Gene_InnatePsychicInsulation</iconPath>
+        <description>Carriers of this gene have an innate psychic shielding around their brain that protects them from most external mood and opinion altering psychic effect. This stops both positive and negative moods.</description>
+        <displayOrderInCategory>310.1</displayOrderInCategory>
+        <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
+        <displayCategory>Psychic</displayCategory>
+        <biostatMet>-1</biostatMet>
+        <customEffectDescriptions>
+			<li>Colonist will not be effected by external psychic thought and opinion changers.</li>
+            <li>Colonist will still be effected by other effects of psychic abilties, even if those abilities include a thought or opinion change.</li>
+            <li>The harmonizer and bond break moods look strange on the list because they don't have a source. This is just a visual bug caused by the base game's naming structure.</li>
+		</customEffectDescriptions>
+        <exclusionTags>
+            <li>EBSG_PsychicMood</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_InnatePsychicHarmonizer</defName>
+        <label>innate psychic harmonizer</label>
+        <iconPath>EBSG/Gene_InnatePsychicHarmonizer</iconPath>
+        <description>Carriers of this gene have an innate psychic harmonizer in their brain that makes everyone around them feel a simplified version of the carrier's emotions.\n\nRemoving this gene will remove the harmonizer.</description>
+        <displayOrderInCategory>310.2</displayOrderInCategory>
+        <displayCategory>Psychic</displayCategory>
+        <biostatMet>-1</biostatMet>
+        <customEffectDescriptions>
+			<li>Gives a psychic harmonizer.</li>
+		</customEffectDescriptions>
+        <modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>PsychicHarmonizer</hediff>
+						<bodyparts>
+							<li>Brain</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+        <exclusionTags>
+            <li>EBSG_PsychicMood</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_InnatePsychicReader</defName>
+        <label>innate psychic reader</label>
+        <iconPath>EBSG/Gene_InnatePsychicReader</iconPath>
+        <description>Carriers of this gene have an innate psychic reader in their brain that makes it easier for them to negotiate with others.\n\nRemoving this gene will remove the reader.</description>
+        <displayOrderInCategory>310.3</displayOrderInCategory>
+        <displayCategory>Psychic</displayCategory>
+        <biostatMet>-3</biostatMet>
+        <customEffectDescriptions>
+			<li>Gives a psychic reader.</li>
+		</customEffectDescriptions>
+        <modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>PsychicReader</hediff>
+						<bodyparts>
+							<li>Brain</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+			</li>
+		</modExtensions>
+    </GeneDef>
+</Defs>
