@@ -108,6 +108,7 @@ At the time of typing (October 8, 2023), it's been a background work-in-progress
         <displayOrderInCategory>310.3</displayOrderInCategory>
         <displayCategory>Psychic</displayCategory>
         <biostatMet>-3</biostatMet>
+        <biostatCpx>2</biostatCpx>
         <customEffectDescriptions>
 			<li>Gives a psychic reader.</li>
 		</customEffectDescriptions>

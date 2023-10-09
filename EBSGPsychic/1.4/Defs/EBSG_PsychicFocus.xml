@@ -55,6 +55,7 @@
         <description>Carriers of this gene find it much easier to keep their mind clear while meditating compared to normal people.</description>
         <displayOrderInCategory>311.5</displayOrderInCategory>
         <biostatMet>-3</biostatMet>
+        <biostatCpx>2</biostatCpx>
         <statFactors>
             <MeditationFocusGain>1.75</MeditationFocusGain>
         </statFactors>
@@ -67,6 +68,7 @@
         <description>Carriers of this gene find it very easy to keep their mind clear while meditating compared to normal people.</description>
         <displayOrderInCategory>311.6</displayOrderInCategory>
         <biostatMet>-4</biostatMet>
+        <biostatCpx>2</biostatCpx>
         <statFactors>
             <MeditationFocusGain>2.00</MeditationFocusGain>
         </statFactors>
@@ -79,6 +81,7 @@
         <description>Carriers of this gene find it super easy to keep their mind clear while meditating compared to normal people.</description>
         <displayOrderInCategory>311.7</displayOrderInCategory>
         <biostatMet>-5</biostatMet>
+        <biostatCpx>3</biostatCpx>
         <statFactors>
             <MeditationFocusGain>2.25</MeditationFocusGain>
         </statFactors>
@@ -91,6 +94,7 @@
         <description>Carriers of this gene find it unbelievably easy to keep their mind clear while meditating compared to normal people.</description>
         <displayOrderInCategory>311.8</displayOrderInCategory>
         <biostatMet>-6</biostatMet>
+        <biostatCpx>3</biostatCpx>
         <statFactors>
             <MeditationFocusGain>2.50</MeditationFocusGain>
         </statFactors>

@@ -55,6 +55,7 @@
         <description>Carriers of this gene lose neural heat a lot faster than normal.</description>
         <displayOrderInCategory>313.5</displayOrderInCategory>
         <biostatMet>-3</biostatMet>
+        <biostatCpx>2</biostatCpx>
         <statFactors>
             <PsychicEntropyRecoveryRate>1.75</PsychicEntropyRecoveryRate>
         </statFactors>
@@ -67,6 +68,7 @@
         <description>Carriers of this gene lose neural heat extremely fast compared to normal.</description>
         <displayOrderInCategory>313.6</displayOrderInCategory>
         <biostatMet>-4</biostatMet>
+        <biostatCpx>2</biostatCpx>
         <statFactors>
             <PsychicEntropyRecoveryRate>2.00</PsychicEntropyRecoveryRate>
         </statFactors>
@@ -79,6 +81,7 @@
         <description>Carriers of this gene lose neural heat super fast compared to normal.</description>
         <displayOrderInCategory>313.7</displayOrderInCategory>
         <biostatMet>-5</biostatMet>
+        <biostatCpx>3</biostatCpx>
         <statFactors>
             <PsychicEntropyRecoveryRate>2.25</PsychicEntropyRecoveryRate>
         </statFactors>
@@ -91,6 +94,7 @@
         <description>Carriers of this gene lose neural heat unbelievably fast compared to normal.</description>
         <displayOrderInCategory>313.8</displayOrderInCategory>
         <biostatMet>-6</biostatMet>
+        <biostatCpx>3</biostatCpx>
         <statFactors>
             <PsychicEntropyRecoveryRate>2.50</PsychicEntropyRecoveryRate>
         </statFactors>
