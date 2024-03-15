@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="EBSG_MeditationFocusBase">
+        <defName>EBSG_TerribleMeditationFocus</defName>
+        <label>terrible focus gain</label>
+        <iconPath>EBSG/Gene_TerribleMeditationFocus</iconPath>
+        <description>Carriers of this gene have extreme difficulties peacefully meditating, only gaining one-third of the focus they normally would.</description>
+        <displayOrderInCategory>311.0</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <MeditationFocusGain>0.33</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase">
+        <defName>EBSG_BadMeditationFocus</defName>
+        <label>bad focus gain</label>
+        <iconPath>EBSG/Gene_BadMeditationFocus</iconPath>
+        <description>Carriers of this gene have difficulties peacefully meditating, only gaining two-thirds of the focus they normally would.</description>
+        <displayOrderInCategory>311.1</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <MeditationFocusGain>0.67</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase">
+        <defName>EBSG_MinorMeditationFocus</defName>
+        <label>minor focus gain</label>
+        <iconPath>EBSG/Gene_MeditationFocus</iconPath>
+        <description>Carriers of this gene find it a bit easier to keep their mind clear while meditating compared to normal people.</description>
+        <displayOrderInCategory>311.2</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <MeditationFocusGain>1.25</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase">
+        <defName>EBSG_MeditationFocus</defName>
+        <label>focus gain</label>
+        <iconPath>EBSG/Gene_MeditationFocus</iconPath>
+        <description>Carriers of this gene find it easier to keep their mind clear while meditating compared to normal people.</description>
+        <displayOrderInCategory>311.4</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <MeditationFocusGain>1.50</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase">
+        <defName>EBSG_MajorMeditationFocus</defName>
+        <label>major focus gain</label>
+        <iconPath>EBSG/Gene_MeditationFocus</iconPath>
+        <description>Carriers of this gene find it much easier to keep their mind clear while meditating compared to normal people.</description>
+        <displayOrderInCategory>311.5</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <MeditationFocusGain>1.75</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase">
+        <defName>EBSG_ExtremeMeditationFocus</defName>
+        <label>extreme focus gain</label>
+        <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
+        <description>Carriers of this gene find it very easy to keep their mind clear while meditating compared to normal people.</description>
+        <displayOrderInCategory>311.6</displayOrderInCategory>
+        <biostatMet>-4</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <MeditationFocusGain>2.00</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase">
+        <defName>EBSG_SuperMeditationFocus</defName>
+        <label>super focus gain</label>
+        <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
+        <description>Carriers of this gene find it super easy to keep their mind clear while meditating compared to normal people.</description>
+        <displayOrderInCategory>311.7</displayOrderInCategory>
+        <biostatMet>-5</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MeditationFocusGain>2.25</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MeditationFocusBase">
+        <defName>EBSG_HyperMeditationFocus</defName>
+        <label>hyper focus gain</label>
+        <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
+        <description>Carriers of this gene find it unbelievably easy to keep their mind clear while meditating compared to normal people.</description>
+        <displayOrderInCategory>311.8</displayOrderInCategory>
+        <biostatMet>-6</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <MeditationFocusGain>2.50</MeditationFocusGain>
+        </statFactors>
+    </GeneDef>
+</Defs>
