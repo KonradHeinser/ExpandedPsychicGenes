@@ -80,62 +80,61 @@
         </nomatch>
     </Operation>
 
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>True</enabled>
-        <label>Psychic Insulation removes Psychic Bond moods:</label>
-        <operations>
-            <li Class="PatchOperationConditional">
-                <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]/nullifyingGenes</xpath>
-                <match Class="PatchOperationAdd">
+    <Operation Class="EBSGFramework.PatchOperationSetting">
+        <setting>psychicInsulationBondMood</setting>
+        <active Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
                     <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]/nullifyingGenes</xpath>
-                    <value><li>EBSG_InnatePsychicInsulation</li></value>
-                </match>
-                <nomatch Class="PatchOperationAdd">
-                    <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]</xpath>
-                    <value>
-                        <nullifyingGenes>
-                            <li>EBSG_InnatePsychicInsulation</li>
-                        </nullifyingGenes>
-                    </value>
-                </nomatch>
-            </li>
-            <li Class="PatchOperationConditional">
-                <xpath>Defs/ThoughtDef[defName="PsychicBondProximity"]/nullifyingGenes</xpath>
-                <match Class="PatchOperationAdd">
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]/nullifyingGenes</xpath>
+                        <value><li>EBSG_InnatePsychicInsulation</li></value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThoughtDef[defName="PsychicBondTorn"]</xpath>
+                        <value>
+                            <nullifyingGenes>
+                                <li>EBSG_InnatePsychicInsulation</li>
+                            </nullifyingGenes>
+                        </value>
+                    </nomatch>
+                </li>
+
+                <li Class="PatchOperationConditional">
                     <xpath>Defs/ThoughtDef[defName="PsychicBondProximity"]/nullifyingGenes</xpath>
-                    <value><li>EBSG_InnatePsychicInsulation</li></value>
-                </match>
-                <nomatch Class="PatchOperationAdd">
-                    <xpath>Defs/ThoughtDef[defName="PsychicBondProximity"]</xpath>
-                    <value>
-                        <nullifyingGenes>
-                            <li>EBSG_InnatePsychicInsulation</li>
-                        </nullifyingGenes>
-                    </value>
-                </nomatch>
-            </li>
-        </operations>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThoughtDef[defName="PsychicBondProximity"]/nullifyingGenes</xpath>
+                        <value><li>EBSG_InnatePsychicInsulation</li></value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThoughtDef[defName="PsychicBondProximity"]</xpath>
+                        <value>
+                            <nullifyingGenes>
+                                <li>EBSG_InnatePsychicInsulation</li>
+                            </nullifyingGenes>
+                        </value>
+                    </nomatch>
+                </li>
+            </operations>
+        </active>
     </Operation>
 
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>True</enabled>
-        <label>Psychic Insulation removes Psychic Bond opinion:</label>
-        <operations>
-            <li Class="PatchOperationConditional">
+    <Operation Class="EBSGFramework.PatchOperationSetting">
+        <setting>psychicInsulationBondOpinion</setting>
+        <active Class="PatchOperationConditional">
+            <xpath>Defs/ThoughtDef[defName="PsychicBond"]/nullifyingGenes</xpath>
+            <match Class="PatchOperationAdd">
                 <xpath>Defs/ThoughtDef[defName="PsychicBond"]/nullifyingGenes</xpath>
-                <match Class="PatchOperationAdd">
-                    <xpath>Defs/ThoughtDef[defName="PsychicBond"]/nullifyingGenes</xpath>
-                    <value><li>EBSG_InnatePsychicInsulation</li></value>
-                </match>
-                <nomatch Class="PatchOperationAdd">
-                    <xpath>Defs/ThoughtDef[defName="PsychicBond"]</xpath>
-                    <value>
-                        <nullifyingGenes>
-                            <li>EBSG_InnatePsychicInsulation</li>
-                        </nullifyingGenes>
-                    </value>
-                </nomatch>
-            </li>
-        </operations>
+                <value><li>EBSG_InnatePsychicInsulation</li></value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                <xpath>Defs/ThoughtDef[defName="PsychicBond"]</xpath>
+                <value>
+                    <nullifyingGenes>
+                        <li>EBSG_InnatePsychicInsulation</li>
+                    </nullifyingGenes>
+                </value>
+            </nomatch>
+        </active>
     </Operation>
 </Patch>

@@ -31,22 +31,21 @@
         <iconPath>Things/Item/Special/PsylinkNeuroformer</iconPath>
         <description>Carriers of this gene have psylinks in their head from birth.\n\nRemoving this gene will remove the psylink.\n\nThis gene only provides the standard innate things granted by a level 1 psylink, meaning you will still need to go through the normal process to gain abilities for these genes to be of use.</description>
         <displayOrderInCategory>310</displayOrderInCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
         <displayCategory>Psychic</displayCategory>
         <biostatMet>-1</biostatMet>
         <customEffectDescriptions>
 			<li>Gives a level 1 psylink.</li>
 		</customEffectDescriptions>
         <modExtensions>
-			<li Class="EBSGFramework.EBSGExtension">
-				<hediffsToApply>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
 					<li>
 						<hediff>PsychicAmplifier</hediff>
-						<bodyParts>
+						<bodyparts>
 							<li>Brain</li>
-						</bodyParts>
+						</bodyparts>
 					</li>
-				</hediffsToApply>
+				</hediffsToBodyParts>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -79,22 +78,21 @@ At the time of typing (October 8, 2023), it's been a background work-in-progress
         <iconPath>EBSG/Gene_InnatePsychicHarmonizer</iconPath>
         <description>Carriers of this gene have an innate psychic harmonizer in their brain that makes everyone around them feel a simplified version of the carrier's emotions.\n\nRemoving this gene will remove the harmonizer.</description>
         <displayOrderInCategory>310.2</displayOrderInCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
         <displayCategory>Psychic</displayCategory>
         <biostatMet>-1</biostatMet>
         <customEffectDescriptions>
 			<li>Gives a psychic harmonizer.</li>
 		</customEffectDescriptions>
         <modExtensions>
-			<li Class="EBSGFramework.EBSGExtension">
-				<hediffsToApply>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
 					<li>
 						<hediff>PsychicHarmonizer</hediff>
-						<bodyParts>
+						<bodyparts>
 							<li>Brain</li>
-						</bodyParts>
+						</bodyparts>
 					</li>
-				</hediffsToApply>
+				</hediffsToBodyParts>
 			</li>
 		</modExtensions>
         <exclusionTags>
@@ -108,7 +106,6 @@ At the time of typing (October 8, 2023), it's been a background work-in-progress
         <iconPath>EBSG/Gene_InnatePsychicReader</iconPath>
         <description>Carriers of this gene have an innate psychic reader in their brain that makes it easier for them to negotiate with others.\n\nRemoving this gene will remove the reader.</description>
         <displayOrderInCategory>310.3</displayOrderInCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
         <displayCategory>Psychic</displayCategory>
         <biostatMet>-3</biostatMet>
         <biostatCpx>2</biostatCpx>
@@ -116,15 +113,15 @@ At the time of typing (October 8, 2023), it's been a background work-in-progress
 			<li>Gives a psychic reader.</li>
 		</customEffectDescriptions>
         <modExtensions>
-			<li Class="EBSGFramework.EBSGExtension">
-				<hediffsToApply>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffsToBodyParts>
 					<li>
 						<hediff>PsychicReader</hediff>
-						<bodyParts>
+						<bodyparts>
 							<li>Brain</li>
-						</bodyParts>
+						</bodyparts>
 					</li>
-				</hediffsToApply>
+				</hediffsToBodyParts>
 			</li>
 		</modExtensions>
     </GeneDef>
