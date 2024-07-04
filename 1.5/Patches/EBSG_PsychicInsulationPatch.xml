@@ -32,52 +32,65 @@
         </nomatch>
     </Operation>
 
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]/nullifyingGenes</xpath>
-        <match Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
-            <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]/nullifyingGenes</xpath>
-            <value><li>EBSG_InnatePsychicInsulation</li></value>
+    <Operation Class="PatchOperationFindMod">
+        <mods><li>Ideology</li></mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]/nullifyingGenes</xpath>
+                    <match Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]/nullifyingGenes</xpath>
+                        <value><li>EBSG_InnatePsychicInsulation</li></value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
+                        <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]</xpath>
+                        <value>
+                            <nullifyingGenes>
+                                <li>EBSG_InnatePsychicInsulation</li>
+                            </nullifyingGenes>
+                        </value>
+                    </nomatch>
+                </li>
+            </operations>
         </match>
-        <nomatch Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Ideology">
-            <xpath>Defs/ThoughtDef[@Name="PsychicArchotechEmanator"]</xpath>
-            <value>
-                <nullifyingGenes>
-                    <li>EBSG_InnatePsychicInsulation</li>
-                </nullifyingGenes>
-            </value>
-        </nomatch>
     </Operation>
 
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThoughtDef[defName="PsychicLove"]/nullifyingGenes</xpath>
-        <match Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
-            <xpath>Defs/ThoughtDef[defName="PsychicLove"]/nullifyingGenes</xpath>
-            <value><li>EBSG_InnatePsychicInsulation</li></value>
+    <Operation Class="PatchOperationFindMod">
+        <mods><li>Royalty</li></mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]/nullifyingGenes</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]/nullifyingGenes</xpath>
+                        <value><li>EBSG_InnatePsychicInsulation</li></value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd">
+                        <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]</xpath>
+                        <value>
+                            <nullifyingGenes>
+                                <li>EBSG_InnatePsychicInsulation</li>
+                            </nullifyingGenes>
+                        </value>
+                    </nomatch>
+                </li>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/ThoughtDef[defName="PsychicLove"]/nullifyingGenes</xpath>
+                    <match Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+                        <xpath>Defs/ThoughtDef[defName="PsychicLove"]/nullifyingGenes</xpath>
+                        <value><li>EBSG_InnatePsychicInsulation</li></value>
+                    </match>
+                    <nomatch Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
+                        <xpath>Defs/ThoughtDef[defName="PsychicLove"]</xpath>
+                        <value>
+                            <nullifyingGenes>
+                                <li>EBSG_InnatePsychicInsulation</li>
+                            </nullifyingGenes>
+                        </value>
+                    </nomatch>
+                </li>               
+            </operations>
         </match>
-        <nomatch Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
-            <xpath>Defs/ThoughtDef[defName="PsychicLove"]</xpath>
-            <value>
-                <nullifyingGenes>
-                    <li>EBSG_InnatePsychicInsulation</li>
-                </nullifyingGenes>
-            </value>
-        </nomatch>
-    </Operation>
-
-    <Operation Class="PatchOperationConditional">
-        <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]/nullifyingGenes</xpath>
-        <match Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
-            <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]/nullifyingGenes</xpath>
-            <value><li>EBSG_InnatePsychicInsulation</li></value>
-        </match>
-        <nomatch Class="PatchOperationAdd" MayRequire="Ludeon.RimWorld.Royalty">
-            <xpath>Defs/ThoughtDef[defName="PsychicHarmonization"]</xpath>
-            <value>
-                <nullifyingGenes>
-                    <li>EBSG_InnatePsychicInsulation</li>
-                </nullifyingGenes>
-            </value>
-        </nomatch>
     </Operation>
 
     <Operation Class="EBSGFramework.PatchOperationSetting">
