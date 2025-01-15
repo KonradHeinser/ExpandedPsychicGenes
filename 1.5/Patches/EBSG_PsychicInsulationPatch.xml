@@ -150,4 +150,11 @@
             </nomatch>
         </active>
     </Operation>
+
+    <Operation Class="EBSGFramework.PatchOperationSetting">
+        <setting>noInnatePsylinkPrereq</setting>
+        <active Class="PatchOperationRemove">
+            <xpath>Defs/GeneDef/prerequisite[text()="EBSG_InnatePsychicAmplifier"]</xpath>
+        </active>
+    </Operation>
 </Patch>
