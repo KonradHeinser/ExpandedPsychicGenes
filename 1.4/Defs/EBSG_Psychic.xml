@@ -50,9 +50,6 @@
 		</modExtensions>
     </GeneDef>
 
-<!--Now, seeing InnatePsychicInsulation may make you think, why am I even in this code? It may also make you think, is he going to make a Psychic Insulator implant? 
-The answers are 1) for something I'm sure, and 2) see Superhero Genes - Deus Ex Machina. If you see this before it comes out, welcome to spoiler island!
-At the time of typing (October 8, 2023), it's been a background work-in-progress for two months. A "do it while the boss isn't watching and you have no work" thing-->
     <GeneDef> 
         <defName>EBSG_InnatePsychicInsulation</defName>
         <label>psychic insulation</label>
